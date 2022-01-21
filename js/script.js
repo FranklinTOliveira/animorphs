@@ -6,30 +6,26 @@ pul.innerHTML = 'hello world';
 document.body.appendChild();
 textarea.value = '';
 
-const taul = document.querySelector['taul'];
-const bul = document.querySelector['bul'];
+const taur = document.querySelector['taur'];
+const bur = document.querySelector['bur'];
 
-const pul = document.createElement('p');
-pul.innerHTML = 'hello world';
+const pur = document.createElement('p');
+pur.innerHTML = 'hello world';
 document.body.appendChild();
 textarea.value = '';
 
-const taul = document.querySelector['taul'];
-const bul = document.querySelector['bul'];
+const talrl = document.querySelector['talrl'];
+const blrl = document.querySelector['blrl'];
 
-const pul = document.createElement('p');
-pul.innerHTML = 'hello world';
+const plrl = document.createElement('p');
+plrl.innerHTML = 'hello world';
 document.body.appendChild();
 textarea.value = '';
 
-const taul = document.querySelector['taul'];
-const bul = document.querySelector['bul'];
+const talr = document.querySelector['talr'];
+const blr = document.querySelector['blr'];
 
-const pul = document.createElement('p');
-pul.innerHTML = 'hello world';
+const plr = document.createElement('p');
+plr.innerHTML = 'hello world';
 document.body.appendChild();
 textarea.value = '';
-
-
-
-
