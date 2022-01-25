@@ -1,11 +1,13 @@
 const taul = document.querySelector['taul'];
 const bul = document.querySelector['bul'];
 
-// bul.addEventListener("click", function); 
+function commentFunction() {
+    const pul = document.textarea.value('');         // Create a text node
+    const comment = document.getElementById("div").appendChild(p);     // Append <li> to <ul> with id="myList" 
+    alert('Someone left a comment.');
+}  
 
-const pul = document.body.appendChild();
-textarea.value = '';
-alert('Someone left a comment.');
+bul.addEventListener("click", commentFunction);
 
 const taur = document.querySelector['taur'];
 const showtaur = taur.style.display;
