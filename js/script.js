@@ -3,7 +3,7 @@ const bul = document.querySelector['bul'];
 
 function commentFunction() {
     const pul = document.textarea.value('');         // Create a text node
-    const comment = document.getElementById("div").appendChild(p);     // Append <li> to <ul> with id="myList" 
+    const comment = document.getElementById("visserOne").appendChild("paragraphOne");     // Append <li> to <ul> with id="myList" 
     alert('Someone left a comment.');
 }  
 
