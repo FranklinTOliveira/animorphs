@@ -5,27 +5,14 @@ const pul = document.createElement('p');
 pul.innerHTML = 'hello world';
 document.body.appendChild();
 textarea.value = '';
+alert('Someone left a comment.');
 
 const taur = document.querySelector['taur'];
+taur.style.display;
+
 const bur = document.querySelector['bur'];
 
-const pur = document.createElement('p');
-pur.innerHTML = 'hello world';
-document.body.appendChild();
-textarea.value = '';
+const plrl = document.getElementById('talrl');
+plrl.style.color = 'white';
 
-const talrl = document.querySelector['talrl'];
 const blrl = document.querySelector['blrl'];
-
-const plrl = document.createElement('p');
-plrl.innerHTML = 'hello world';
-document.body.appendChild();
-textarea.value = '';
-
-const talr = document.querySelector['talr'];
-const blr = document.querySelector['blr'];
-
-const plr = document.createElement('p');
-plr.innerHTML = 'hello world';
-document.body.appendChild();
-textarea.value = '';
