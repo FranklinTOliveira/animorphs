@@ -1,29 +1,33 @@
-const taul = document.querySelector['taul'];
-const bul = document.querySelector['bul'];
+const taul = document.getElementById('taul');
+const bul = document.getElementById('bul');
 
-function commentFunction() {
-    const pul = document.textarea.value('');         // Create a text node
-    const comment = document.getElementById("visserOne").appendChild("paragraphOne");     // Append <li> to <ul> with id="myList" 
+function commentFunction(e) {
+    const pul = taul.value;
+    console.log(pul);         
+    document.getElementById('paragraphOne').textContent = pul
     alert('Someone left a comment.');
 }  
 
-bul.addEventListener("click", commentFunction);
+bul.addEventListener('click', commentFunction);
 
-const taur = document.querySelector['taur'];
-const showtaur = taur.style.display;
+function showtaur(e){
+  console.log('showtaur');
+  const taur = document.getElementById('taur');
+  taur.style.display = 'block';
+}
 
-const bur = document.querySelector['bur'];
-bur.addEventListener("click", showtaur);
+const bur = document.getElementById('bur');
+bur.addEventListener('click', showtaur);
 
-const talrl = document.getElementById("talrl");
+const talrl = document.getElementById('talrl');
 talrl.style.backgroundColor = 'black';
 
 function brighten(el) {
-  if (el.style.backgroundColor === 'black') {
-    el.style.backgroundColor = 'white';   
+  if (talrl.style.backgroundColor === 'black') {
+    talrl.style.backgroundColor = 'white';   
   }
-  else el.style.backgroundColor = 'black';
+  else talrl.style.backgroundColor = 'black';
 }
 
-const blrl = document.querySelector['blrl'];
-blrl.addEventListener("click", brighten);
+const blrl = document.getElementById('blrl');
+blrl.addEventListener('click', brighten);
