@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
 
-<div class="group">    
+<div class="card" style="width: 18rem;">
+<p id="talrl">He is the leader of the Council of Thirteen.</p>
+<button id="blrl" onclick="talrl(this)">
+    The Yeerk Emperor
+</button>
+</div>
+
+<div class="card" style="width: 18rem;">
 <textarea id="taul"></textarea>
 <p id="paragraphOne"></p>
 <button id="bul">
@@ -18,24 +26,10 @@
 </button>
 </div>
 
-<div class="group">
+<div class="card" style="width: 18rem;">
 <p hidden id="taur">He is an Andalite-Controller.</p>
 <button id="bur">
     Visser Three
-</button>
-</div>
-
-<div class="group">
-<p id="talrl">He is the leader of the Council of Thirteen.</p>
-<button id="blrl" onclick="talrl(this)">
-    The Yeerk Emperor
-</button>
-</div>
-
-<div class="group">
-<textarea id="talr"></textarea>
-<button id="blr">
-    The Council of 13
 </button>
 </div>
 
