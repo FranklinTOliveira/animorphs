@@ -10,7 +10,7 @@ function commentFunction(e) {
 
 bul.addEventListener('click', commentFunction);
 
-function showtaur(e){
+function showtaur() {
   console.log('showtaur');
   const taur = document.getElementById('taur');
   taur.style.display = 'block';
@@ -18,6 +18,20 @@ function showtaur(e){
 
 const bur = document.getElementById('bur');
 bur.addEventListener('click', showtaur);
+
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+
+
+
+
+
+
+
+
+
+
 
 const talrl = document.getElementById('talrl');
 talrl.style.backgroundColor = 'black';
