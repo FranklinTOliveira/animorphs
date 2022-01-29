@@ -19,20 +19,6 @@ function showtaur() {
 const bur = document.getElementById('bur');
 bur.addEventListener('click', showtaur);
 
-function myFunction() {
-  document.getElementById("panel").style.display = "block";
-}
-
-
-
-
-
-
-
-
-
-
-
 const talrl = document.getElementById('talrl');
 talrl.style.backgroundColor = 'black';
 
