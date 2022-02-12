@@ -13,7 +13,7 @@ bul.addEventListener('click', commentFunction);
 function showtaur() {
   console.log('showtaur');
   const taur = document.getElementById('taur');
-  taur.style.display = 'block';
+  taur.style.color = 'black';
 }
 
 const bur = document.getElementById('bur');
