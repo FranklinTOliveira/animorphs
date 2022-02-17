@@ -55,13 +55,10 @@ while(j<53){
 	function addParagraphJB(){
 		let outputDivJB = document.getElementById("outputJakeBooks");
 		
-		if (j<=40) {
+		if (j<39) {
 			jakeBooksSentence+= `${animorphsBooks[j]}, `;
 			j+=5;
-			if (j===40) {
-				j+=6;
-			}
-		} else if (j>=41 && j<47) {
+		} else if (j>=40 && j<47) {
 			jakeBooksSentence+= `${animorphsBooks[j]}, `;
 			j+=6;
 		} else {
@@ -80,12 +77,12 @@ let m = 4;
 do{
 	function addParagraphMB(){
 		let outputDivMB = document.getElementById("outputMarcoBooks");
-		if (m<=44) {
-		marcoBooksSentence+= `${animorphsBooks[m]}, `;
-		m+=5;
-			if (m===44) {
-				m+=6;
-			}
+		if (m<44) {
+			marcoBooksSentence+= `${animorphsBooks[m]}, `;
+			m+=5;
+		} else if(m>=44 && m<50){
+			marcoBooksSentence+= `${animorphsBooks[m]}, `;
+			m+=6;	
 		} else {
 			marcoBooksSentence+= `and ${animorphsBooks[m]}.`;
 			m+=6;
@@ -99,20 +96,24 @@ let tobiasBooksSentence = "The Tobias POV Books are ";
 
 let t = 2;
 
-while(t<43){
+while(t<49){
 	function addParagraphTB(){
 		let outputDivTB = document.getElementById("outputTobiasBooks");
-		if(t!==42){
+		if (t<33) {
 			tobiasBooksSentence+= `${animorphsBooks[t]}, `;
+			t+=10;
+		} else if(t>=33 && t<43){
+			tobiasBooksSentence+= `${animorphsBooks[t]}, `;
+			t+=6;	
 		} else {
 			tobiasBooksSentence+= `and ${animorphsBooks[t]}.`;
-		}
+			t+=6;
+		} 
 		outputDivTB.innerHTML = tobiasBooksSentence;
 	}
     addParagraphTB();
-	t+=10;
 }
-	
+
 let axBooksSentence = "The Ax POV Books are ";
 
 let a = 7;
@@ -120,16 +121,35 @@ let a = 7;
 do{
 	function addParagraphAB(){
 		let outputDivAB = document.getElementById("outputAxBooks");
-		if(a!==37){
+		console.log(a);
+	/* 	if (a<=37) {
 			axBooksSentence+= `${animorphsBooks[a]}, `;
+			a+=10;
+		} else if (a>37 && a<45) {
+			axBooksSentence+= `${animorphsBooks[a]}, `;
+			a+=8;	
 		} else {
 			axBooksSentence+= `and ${animorphsBooks[a]}.`;
+			a+=6;
+		}  */
+		if (a<=37) {
+			axBooksSentence+= `${animorphsBooks[a]}, `;
+			a+=10;
+			if (a===37) {
+				axBooksSentence+= `${animorphsBooks[a]}, `;
+				a+=8;
+			}
+		} else if (a>=38 && a<51) {
+			axBooksSentence+= `${animorphsBooks[a]}, `;
+			a+=6;
+		} else {
+			axBooksSentence+= `and ${animorphsBooks[a]}.`;
+			a+=6;
 		}
 		outputDivAB.innerHTML = axBooksSentence;
 	}
     addParagraphAB();
-	a+=10;
-}while(a<38)
+}while(a<52)
 
 let r = 1;
 
@@ -138,13 +158,10 @@ let rachelBooksSentence = "The Rachel POV Books are ";
 while(r<54){
 	function addParagraphRB(){
 		let outputDivRB = document.getElementById("outputRachelBooks");
-		if (r<=42) {
+		if (r<41) {
 			rachelBooksSentence+= `${animorphsBooks[r]}, `;
 			r+=5;
-			if (r===42) {
-				r+=6;
-			}
-		} else if (r>=42 && r<48) {
+		} else if (r>=41 && r<48) {
 			rachelBooksSentence+= `${animorphsBooks[r]}, `;
 			r+=6;
 		} else {
@@ -163,12 +180,12 @@ let c = 3;
 do{
 	function addParagraphCB(){
 		let outputDivCB = document.getElementById("outputCassieBooks");
-		if (c<=43) {
-		cassieBooksSentence+= `${animorphsBooks[c]}, `;
-		c+=5;
-			if (c===43) {
-				m+=6;
-			}
+		if (c<43) {
+			cassieBooksSentence+= `${animorphsBooks[c]}, `;
+			c+=5;
+		} else if(c>=43 && c<49){
+			cassieBooksSentence+= `${animorphsBooks[c]}, `;
+			c+=6;	
 		} else {
 			cassieBooksSentence+= `and ${animorphsBooks[c]}.`;
 			c+=6;

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeerk Biographies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/yeerks.js" defer></script>
+</head>
+<body>
+
+<div class="container h-100">
+
+    <div class="row align-items-center justify-content-center">
+
+        <div class="col-6 align-items-center">
+
+            <div class="card h-50 w-50 p-2 align-items-center">
+
+                <div class="card border-0 align-items-center">        
+                    <p id="councilLeader" class="p-2">He is the leader of the Council of Thirteen.</p>
+                    <p>Learn a fact about the Yeerk Emperor.</p>
+                    <button id="aboutEmperor" class="w-50" onclick="brighten()">
+                        Reveal
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="card mt-4 h-75 w-50">
+
+                <p id="secretTrivia" class="p-2">He is an Andalite-Controller.</p>
+                
+            </div>
+
+            <div class="card mt-4 h-100 w-50 p-2">
+
+                <p>Learn a fact about Visser Three.</p>
+
+            </div>
+
+            <div class="card border-0 w-50 mt-2 align-items-center justify-content-center">
+
+                <button id="revealVissersHost" class="h-25 w-50 align-items-end" onclick="blackenedTrivia()">
+                    Reveal
+                </button>
+                
+            </div>
+
+        </div>
+
+        <div class="col-6 align-items-center">
+    
+            <div class="card h-50 w-50 p-2 align-items-center">
+    
+                <h3 class="card-title">Visser One</h3>
+    
+                <p class="card-text">From her introduction in Book 5 to her demise in Book 45, Visser One is a powerful antagonist, even a smarter one than Visser Three, the main antagonist.</p>
+    
+                <p class="card-text">Would anyone who's read the books like to add more information about this character?</p>
+    
+            </div>
+    
+            <div class="card mt-4 h-50 w-50">
+                
+                <h1 style="text-align: center;">Leave a Comment</h1>
+                
+                <form name="LeaveAComment" action="/submit.php" onsubmit="return submitComment()" method="post">
+        
+                    <p>Name: <input type="text" size="65" name="Name" /></p>
+        
+                    <br />
+        
+                    <p>E-mail Address: <input type="text" size="65" name="EMail" /></p>
+        
+                    <br />
+              
+                    <br />
+                    
+                    <p>Comments: <textarea cols="55" name="Comment"></textarea></p>
+        
+                    <p><input type="submit" value="send" name="Submit" /><input type="reset" value="Reset" name="Reset" /></p>
+                </form>
+                
+            </div>
+    
+            <div class="card mt-4 h-50 w-50 p-2">
+    
+                <h6 class="card-title">Comment from a Reader</h6>
+    
+                <p id="readersParagraph"></p>
+                
+            </div>
+    
+            <div class="card border-0 w-50 mt-2 align-items-center justify-content-center">
+    
+                <button id="submitComment" class="w-50">
+                    Submit
+                </button>
+                
+            </div>
+    
+        </div>
+    
+    </div>
+
+</div>
+
+</body>
+</html>
